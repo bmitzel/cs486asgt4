@@ -482,7 +482,6 @@ void updateRectangle(rectangle_t* r, double deltaTime)
 {
     /* Update the rectangle's intensity */
     r->intensity = r->intensity - (0.000166667f / deltaTime); /* divide to scale with gTime */
-    fprintf(stderr, "deltaTime = %f\n", deltaTime);
 
     /* Update the rectangle's translation */
     for (int i = 0; i < 3; i++)
